@@ -44,4 +44,4 @@
 ### 상속은 IS-A 관계, Poodle IS-A Dog
 
 ## 2019-11-29
-- initt
+- init
