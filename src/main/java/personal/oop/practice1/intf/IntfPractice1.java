@@ -1,4 +1,4 @@
-package personal.oop.practice1;
+package personal.oop.practice1.intf;
 
 import personal.oop.practice1.abst.Pomeranian;
 import personal.oop.practice1.intf.*;
@@ -9,7 +9,7 @@ import personal.oop.practice1.intf.*;
  * @update 2019-12-02
  * @description Animal Modeling Practice.
  **/
-public class Practice1 {
+public class IntfPractice1 {
     public static void main(String[] args) {
         // interface
         Dog navi = new Poodle(); // 나비
@@ -68,23 +68,5 @@ public class Practice1 {
         FeedGround birdGround = new FeedGround(birdSparrow);
         birdGround.feed();
         System.out.println();
-
-        System.out.println("--------------------------------------------------");
-        Pomeranian pomeranian = new Pomeranian();
-        pomeranian.bark();
-        pomeranian.eat();
-        pomeranian.smell();
-        System.out.println();
-
-        personal.oop.practice1.abst.Dog pomeranianDog = new Pomeranian();
-        pomeranianDog.bark();
-        pomeranianDog.eat();
-        pomeranianDog.smell();
-        System.out.println();
-
-        personal.oop.practice1.abst.Animal pomeranianAnimal = new Pomeranian();
-        // pomeranianAnimal.bark();
-        pomeranianAnimal.eat();
-        pomeranianAnimal.smell();
     }
 }

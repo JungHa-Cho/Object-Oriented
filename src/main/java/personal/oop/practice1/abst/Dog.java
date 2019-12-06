@@ -8,11 +8,9 @@ package personal.oop.practice1.abst;
  * @update 2019 -12-04
  */
 public abstract class Dog extends Animal {
-    @Override
-    public void smell() {
-        // super.smell();
-        System.out.println("개 지린내");
-    }
-
+    /**
+     * Bark.
+     * 짖다. 개만의 특성.
+     */
     public abstract void bark();
 }

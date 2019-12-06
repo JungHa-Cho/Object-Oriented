@@ -6,18 +6,18 @@ package personal.oop.practice1.abst;
  * @update 2019-12-04
  **/
 public class Pomeranian extends Dog {
+
+    @Override
+    void doBehavior() {
+        System.out.println("[포메라니안] 작고 쪼메난게 설쳐댐. 까불까불 왔다갔다 애교도");
+    }
+
     @Override
     public void bark() {
-        System.out.println("[포메라니안] 왈멍왈멍");
+        System.out.println("[포메라니안] 와로아ㅗ라와와왈");
     }
 
-    @Override
-    public void eat() {
-        System.out.println("[포메라니안] 개밥 먹음");
+    public void doFeed() {
+        feed();
     }
-
-    /*@Override
-    public void smell() {
-        System.out.println("[포메라니안] 개 지린내");
-    }*/
 }
