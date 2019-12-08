@@ -1,5 +1,6 @@
 package personal.oop.practice1;
 
+import personal.oop.practice1.abst.Manabst;
 import personal.oop.practice1.intf.Action;
 import personal.oop.practice1.intf.Man;
 import personal.oop.practice1.intf.People;
@@ -38,5 +39,11 @@ public class Practice1 {
         woman.hate();
         woman.love();
 
+        System.out.println("----------------------------------------------------------");
+        System.out.println("추상 클래스");
+
+        Manabst manabst = new Manabst();
+        manabst.cry();
+        manabst.happy();
     }
 }
