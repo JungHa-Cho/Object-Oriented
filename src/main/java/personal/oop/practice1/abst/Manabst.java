@@ -12,8 +12,8 @@ public class Manabst extends Peopleabst {
     /**
      * 추상 클래스 happy 메소드 오버라이딩( 재정의 ).
      */
-    @Override
-    public void happy(){
-       System.out.println("맨 클래스");
-    }
+//    @Override
+//    public void happy(){
+//       System.out.println("맨 클래스");
+//    }
 }

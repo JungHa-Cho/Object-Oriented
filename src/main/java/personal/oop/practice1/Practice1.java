@@ -45,5 +45,6 @@ public class Practice1 {
         Manabst manabst = new Manabst();
         manabst.cry();
         manabst.happy();
+        manabst.happy();
     }
 }
