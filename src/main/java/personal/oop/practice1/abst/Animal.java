@@ -8,6 +8,21 @@ package personal.oop.practice1.abst;
  * @update 2019 -12-04
  */
 public abstract class Animal {
+
+    /**
+     * The Name.
+     */
+    String name;
+
+    /**
+     * Instantiates a new Animal.
+     *
+     * @param name the name
+     */
+    Animal(String name) {
+        this.name = name;
+    }
+
     /**
      * Eat.
      */
@@ -17,6 +32,6 @@ public abstract class Animal {
      * Smell.
      */
     public void smell() {
-        System.out.println("동물 지린내");
+        System.out.println("Animal smell");
     }
 }

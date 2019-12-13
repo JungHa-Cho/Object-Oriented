@@ -10,11 +10,11 @@ package personal.oop.practice1.intf;
 public class Poodle implements Dog {
     @Override
     public void bark() {
-        System.out.println("[푸들] 푸월월푸월");
+        System.out.println("[Poodle] 푸월월푸월");
     }
 
     @Override
     public void eat() {
-        System.out.println("[푸들] 개밥 먹음");
+        System.out.println("[Poodle] 개밥 먹음");
     }
 }

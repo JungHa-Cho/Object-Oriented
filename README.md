@@ -31,17 +31,20 @@
 ### 오브젝트 object
 - 구체, 실제 존재, 고유성
 
-### 클래스 class == 추상 abstract
-### 오브젝트 object == 실체 instance
+### 개념 
+- 클래스 class == 추상 abstract
+- 오브젝트 object == 실체 instance
 
-### attribute == data == member variables == state == field
-### behavior == operation == member function == method
-### 클래스 class == 개념 concept == 타입 type
-### 객체 object == 실체 instance == 변수 variable
+- attribute == data == member variables == state == field
+- behavior == operation == member function == method
+- 클래스 class == 개념 concept == 타입 type
+- 객체 object == 실체 instance == 변수 variable
 
-### 캡슐화 encapsulation, 상속성 inheritance, 다형성 polymorphism 세 가지를 지원하면 객체 지향 프로그래밍 언어라 한다.
+### 특징 
+- 캡슐화 encapsulation, 상속성 inheritance, 다형성 polymorphism 세 가지를 지원하면 객체 지향 프로그래밍 언어라 한다.
 
-### 상속은 IS-A 관계, Poodle IS-A Dog
+### 관계 
+- 상속은 IS-A 관계, Poodle IS-A Dog
 
 ## 2019-11-29
 - initt

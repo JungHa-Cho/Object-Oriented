@@ -8,10 +8,19 @@ package personal.oop.practice1.abst;
  * @update 2019 -12-04
  */
 public abstract class Dog extends Animal {
+    /**
+     * Instantiates a new Animal.
+     *
+     * @param name the name
+     */
+    Dog(String name) {
+        super(name);
+    }
+
     @Override
     public void smell() {
         // super.smell();
-        System.out.println("개 지린내");
+        System.out.println("Dog smell");
     }
 
     public abstract void bark();
