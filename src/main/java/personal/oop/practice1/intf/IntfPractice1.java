@@ -1,8 +1,5 @@
 package personal.oop.practice1.intf;
 
-import personal.oop.practice1.abst.Pomeranian;
-import personal.oop.practice1.intf.*;
-
 /**
  * @author cho_jeong_ha
  * @project oop-practice
@@ -52,6 +49,7 @@ public class IntfPractice1 {
         System.out.println();
 
         Bird birdSparrow = new Sparrow();
+
         Bird birdEagle = new Eagle();
 
         System.out.println("-------- Bird Interface");
@@ -66,6 +64,12 @@ public class IntfPractice1 {
         ground.feed();
 
         FeedGround birdGround = new FeedGround(birdSparrow);
+        FeedGround dogGorund = new FeedGround(chorong);
+
+        birdGround.feed();
+
+        dogGorund.feed();
+
         birdGround.feed();
         System.out.println();
     }
