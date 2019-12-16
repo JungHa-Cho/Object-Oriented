@@ -6,15 +6,6 @@ package personal.oop.practice1.abst;
  * @update 2019-12-04
  **/
 public class Pomeranian extends Dog {
-    /**
-     * Instantiates a new Animal.
-     *
-     * @param name the name
-     */
-    public Pomeranian(String name) {
-        super(name);
-    }
-
     @Override
     public void bark() {
         System.out.println("[포메라니안] 왈멍왈멍");

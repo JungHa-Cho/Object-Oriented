@@ -3,9 +3,6 @@ package personal.oop.practice1;
 import personal.oop.practice1.abst.Pomeranian;
 import personal.oop.practice1.intf.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author cho_jeong_ha
  * @project oop-practice
@@ -14,8 +11,6 @@ import java.util.List;
  **/
 public class Practice1 {
     public static void main(String[] args) {
-        List<Animal> animalList = new ArrayList<>();
-
         // interface
         Dog navi = new Poodle(); // 나비
         Dog chorong = new WelshCorgi(); // 초롱이
@@ -75,23 +70,21 @@ public class Practice1 {
         System.out.println();
 
         System.out.println("--------------------------------------------------");
-        Pomeranian pomeranian = new Pomeranian("흰둥이");
+        Pomeranian pomeranian = new Pomeranian();
         pomeranian.bark();
         pomeranian.eat();
         pomeranian.smell();
         System.out.println();
 
-        personal.oop.practice1.abst.Dog pomeranianDog = new Pomeranian("검둥이");
+        personal.oop.practice1.abst.Dog pomeranianDog = new Pomeranian();
         pomeranianDog.bark();
         pomeranianDog.eat();
         pomeranianDog.smell();
         System.out.println();
 
-        personal.oop.practice1.abst.Animal pomeranianAnimal = new Pomeranian("발발이");
+        personal.oop.practice1.abst.Animal pomeranianAnimal = new Pomeranian();
         // pomeranianAnimal.bark();
         pomeranianAnimal.eat();
         pomeranianAnimal.smell();
-
-
     }
 }

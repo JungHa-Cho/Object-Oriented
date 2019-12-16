@@ -16,5 +16,10 @@ public class Sparrow implements Bird {
     @Override
     public void eat() {
         System.out.println("[참새] 참새는 뭘먹지?");
+        System.out.println("");
+    }
+
+    public void ea() {
+
     }
 }
