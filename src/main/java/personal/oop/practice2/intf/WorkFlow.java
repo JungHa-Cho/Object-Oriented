@@ -5,7 +5,7 @@ package personal.oop.practice2.intf;
  * @project oop-practice
  * @update 2019-12-16
  **/
-public class Main {
+public class WorkFlow {
     public static void main(String[] args) {
         Company nano = new Nano();
 
@@ -19,6 +19,22 @@ public class Main {
         nano.callTheRoll();
 
         // 일 시작
+        nano.startWork();
+
+        System.out.println("-------------");
+
+        // 하이 피치
+        nano.doFire("CHO");
+        nano.doFire("SON");
+
+        nano.startWork();
+
+        System.out.println("-------------");
+
+        // 로우 피치
+        nano.doHire("JH");
+        nano.doHire("JN");
+
         nano.startWork();
     }
 }

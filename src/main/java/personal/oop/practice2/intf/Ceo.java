@@ -1,5 +1,7 @@
 package personal.oop.practice2.intf;
 
+import java.util.List;
+
 /**
  * @author cho_jeong_ha
  * @project oop-practice
@@ -8,19 +10,34 @@ package personal.oop.practice2.intf;
 public class Ceo implements Employer {
 
     private String name;
+    private List<Worker> workerList;
 
     public Ceo(String name) {
         this.name = name;
     }
 
-    @Override
-    public void hire(Employee employee) {
-
+    public void setWorkerList(List<Worker> workerList) {
+        this.workerList = workerList;
     }
 
     @Override
-    public void fire(Employee employee) {
+    public List<Worker> hire(Employee employee) {
+        workerList.add(employee);
+        return workerList;
+    }
 
+    @Override
+    public List<Worker> fire(Employee employee) {
+        Worker dismissWorker = null;
+        for (Worker worker : workerList) {
+            if (worker.getName().contains(employee.getName())) {
+                dismissWorker = worker;
+            }
+        }
+
+        workerList.remove(dismissWorker);
+
+        return workerList;
     }
 
     @Override
