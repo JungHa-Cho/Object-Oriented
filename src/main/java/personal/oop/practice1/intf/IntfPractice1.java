@@ -1,4 +1,7 @@
-package personal.oop.practice1.intf;
+package personal.oop.practice1;
+
+import personal.oop.practice1.abst.Pomeranian;
+import personal.oop.practice1.intf.*;
 
 /**
  * @author cho_jeong_ha
@@ -6,7 +9,7 @@ package personal.oop.practice1.intf;
  * @update 2019-12-02
  * @description Animal Modeling Practice.
  **/
-public class IntfPractice1 {
+public class Practice1 {
     public static void main(String[] args) {
         // interface
         Dog navi = new Poodle(); // 나비
@@ -49,7 +52,6 @@ public class IntfPractice1 {
         System.out.println();
 
         Bird birdSparrow = new Sparrow();
-
         Bird birdEagle = new Eagle();
 
         System.out.println("-------- Bird Interface");
@@ -64,13 +66,25 @@ public class IntfPractice1 {
         ground.feed();
 
         FeedGround birdGround = new FeedGround(birdSparrow);
-        FeedGround dogGorund = new FeedGround(chorong);
-
-        birdGround.feed();
-
-        dogGorund.feed();
-
         birdGround.feed();
         System.out.println();
+
+        System.out.println("--------------------------------------------------");
+        Pomeranian pomeranian = new Pomeranian();
+        pomeranian.bark();
+        pomeranian.eat();
+        pomeranian.smell();
+        System.out.println();
+
+        personal.oop.practice1.abst.Dog pomeranianDog = new Pomeranian();
+        pomeranianDog.bark();
+        pomeranianDog.eat();
+        pomeranianDog.smell();
+        System.out.println();
+
+        personal.oop.practice1.abst.Animal pomeranianAnimal = new Pomeranian();
+        // pomeranianAnimal.bark();
+        pomeranianAnimal.eat();
+        pomeranianAnimal.smell();
     }
 }
