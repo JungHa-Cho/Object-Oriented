@@ -1,6 +1,19 @@
 package personal.oop.practice3.company.intf;
 
+/**
+ * The interface Building.
+ */
 public interface Building extends Company {
-     void enterCompany(Worker worker);
-     void checkWorker();
+    /**
+     * Come to work boolean.
+     *
+     * @param worker the worker
+     * @return the boolean
+     */
+    boolean comeToWork(Worker worker);
+
+    /**
+     * Check worker.
+     */
+    void checkWorker(Employer employer);
 }

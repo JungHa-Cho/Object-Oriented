@@ -4,12 +4,17 @@ import personal.oop.practice2.abst.Maltese;
 import personal.oop.practice2.intf.*;
 
 /**
- *  abstract 와 interface 차이점 알기
- *  - abstract 는 일반메소드는 강제 오버라이딩아님
- *  - interface 는 모든 클래스 오버라이딩
+ * abstract 와 interface 차이점 알기
+ * - abstract 는 일반메소드는 강제 오버라이딩아님
+ * - interface 는 모든 클래스 오버라이딩
  */
 public class Practice {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // abstract

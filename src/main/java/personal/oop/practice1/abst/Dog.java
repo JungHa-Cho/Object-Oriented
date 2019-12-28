@@ -23,5 +23,8 @@ public abstract class Dog extends Animal {
         System.out.println("Dog smell");
     }
 
+    /**
+     * Bark.
+     */
     public abstract void bark();
 }

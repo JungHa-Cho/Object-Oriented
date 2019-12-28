@@ -1,36 +1,17 @@
 package personal.oop.practice3.company;
 
-import personal.oop.practice3.company.intf.*;
+import personal.oop.practice3.company.intf.OneDayWorkProcess;
 
-
+/**
+ * The type Main.
+ */
 public class Main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
-
-        Worker jun = new Employee();
-        Worker cho = new Employee();
-        Worker ceo = new Employer();
-
-        jun.setName("Jun");
-        cho.setName("Cho");
-        ceo.setName("Park");
-
-        jun.goCompany();
-        cho.goCompany();
-        ceo.goCompany();
-
-        // 확인할것 1
-        ResearchFloor rsh = new ResearchFloor();
-        //rsh.enterCompany(jun);
-        //rsh.checkWorker();
-
-        jun.work();
-        cho.work();
-        ceo.work();
-
-        // 확인할것 2
-        Employer park = new Employer();
-        park.setName("Park");
-        park.payBonus(jun);
-        park.payBonus(cho);
+        new OneDayWorkProcess().processing();
     }
 }

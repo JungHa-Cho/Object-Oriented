@@ -1,5 +1,8 @@
 package personal.oop.practice2.intf;
 
+/**
+ * The interface Black fur.
+ */
 public interface BlackFur extends Dog {
 
     /**

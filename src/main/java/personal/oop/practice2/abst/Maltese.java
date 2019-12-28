@@ -1,5 +1,8 @@
 package personal.oop.practice2.abst;
 
+/**
+ * The type Maltese.
+ */
 public class Maltese extends Dog {
 
     @Override

@@ -1,5 +1,8 @@
 package personal.oop.practice2.intf;
 
+/**
+ * The type Persian.
+ */
 public class Persian implements Cat{
     @Override
     public void meow() {

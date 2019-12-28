@@ -7,12 +7,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * The type Practice 1.
+ *
  * @author cho_jeong_ha
- * @project oop-practice
- * @update 2019-12-02
+ * @project oop -practice
+ * @update 2019 -12-02
  * @description Animal Modeling Practice.
- **/
+ */
 public class Practice1 {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         List<Animal> animalList = new ArrayList<>();
 

@@ -1,10 +1,12 @@
 package personal.oop.practice1.abst;
 
 /**
+ * The type Pomeranian.
+ *
  * @author cho_jeong_ha
- * @project oop-practice
- * @update 2019-12-04
- **/
+ * @project oop -practice
+ * @update 2019 -12-04
+ */
 public class Pomeranian extends Dog {
     /**
      * Instantiates a new Animal.

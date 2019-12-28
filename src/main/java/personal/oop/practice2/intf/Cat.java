@@ -1,5 +1,8 @@
 package personal.oop.practice2.intf;
 
+/**
+ * The interface Cat.
+ */
 public interface Cat extends Animal{
 
     /**

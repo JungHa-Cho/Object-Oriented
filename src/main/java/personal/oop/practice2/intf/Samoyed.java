@@ -1,5 +1,8 @@
 package personal.oop.practice2.intf;
 
+/**
+ * The type Samoyed.
+ */
 public class Samoyed implements WhiteFur {
 
     @Override

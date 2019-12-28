@@ -1,5 +1,8 @@
 package personal.oop.practice2.intf;
 
+/**
+ * The type Shepherd.
+ */
 public class Shepherd implements BlackFur{
 
     @Override
@@ -27,6 +30,9 @@ public class Shepherd implements BlackFur{
         System.out.println("[Shepherd] blackMolting.");
     }
 
+    /**
+     * Test.
+     */
     public void test() {
         System.out.println("[Shepherd] test.");
     }

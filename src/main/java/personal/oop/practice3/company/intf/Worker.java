@@ -1,9 +1,23 @@
 package personal.oop.practice3.company.intf;
 
+/**
+ * The interface Worker.
+ */
 public interface Worker extends Company {
-    void goCompany();
+    /**
+     * Leave home.
+     */
+    void leaveHome();
+
+    /**
+     * Work.
+     */
     void work();
 
-    void setName(String name);
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     String getName();
 }
