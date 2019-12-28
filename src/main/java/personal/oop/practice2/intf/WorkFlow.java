@@ -1,5 +1,8 @@
 package personal.oop.practice2.intf;
 
+import com.sun.org.apache.xpath.internal.operations.String;
+import jdk.nashorn.internal.ir.CallNode;
+
 /**
  * @author cho_jeong_ha
  * @project oop-practice
@@ -8,6 +11,16 @@ package personal.oop.practice2.intf;
 public class WorkFlow {
     public static void main(String[] args) {
         Company nano = new Nano();
+
+        Worker cjh = new Programmer("CJH");
+
+        if (cjh instanceof Programmer) {
+            System.out.println("프로그래머다");
+        }
+
+        if (cjh instanceof Worker) {
+            System.out.println("워커다");
+        }
 
         // 출근
         nano.goToWork(new Programmer("CHO"));
