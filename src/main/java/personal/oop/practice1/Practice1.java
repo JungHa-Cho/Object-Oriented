@@ -1,7 +1,12 @@
 package personal.oop.practice1;
 
-import personal.oop.practice1.abst.Pomeranian;
-import personal.oop.practice1.intf.*;
+import personal.oop.practice1.abst.Manabst;
+import personal.oop.practice1.intf.Action;
+import personal.oop.practice1.intf.Man;
+import personal.oop.practice1.intf.People;
+import personal.oop.practice1.intf.Woman;
+
+import java.nio.file.Watchable;
 
 /**
  * @author cho_jeong_ha
@@ -11,6 +16,7 @@ import personal.oop.practice1.intf.*;
  **/
 public class Practice1 {
     public static void main(String[] args) {
+<<<<<<< HEAD
         // interface
         Dog navi = new Poodle(); // 나비
         Dog chorong = new WelshCorgi(); // 초롱이
@@ -86,5 +92,37 @@ public class Practice1 {
         // pomeranianAnimal.bark();
         pomeranianAnimal.eat();
         pomeranianAnimal.smell();
+=======
+        People man = new Man();
+        People woman = new Woman();
+        System.out.println("난 남자 ");
+        man.love();
+        man.move();
+        man.sex();
+        man.work();
+        man.anger();
+        man.cry();
+        man.happy();
+        man.hate();
+        man.love();
+        System.out.println("----------------------------------------------------------");
+        System.out.println("난 여자 ");
+        woman.love();
+        woman.move();
+        woman.sex();
+        woman.work();
+        woman.cry();
+        woman.happy();
+        woman.hate();
+        woman.love();
+
+        System.out.println("----------------------------------------------------------");
+        System.out.println("추상 클래스");
+
+        Manabst manabst = new Manabst();
+        manabst.cry();
+        manabst.happy();
+        manabst.happy();
+>>>>>>> 14196fdd378a621cfc400e665ea92d54e622c96a
     }
 }
