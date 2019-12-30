@@ -15,11 +15,5 @@ public class DogPlayGround {
      *
      * @param dog the dog
      */
-    DogPlayGround(Dog dog) {
-        this.dog = dog;
-    }
 
-    public void play() {
-        dog.bark();
-    }
 }

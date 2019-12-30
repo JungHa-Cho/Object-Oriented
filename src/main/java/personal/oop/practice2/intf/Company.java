@@ -5,7 +5,7 @@ package personal.oop.practice2.intf;
  * @project oop-practice
  * @update 2019-12-16
  **/
-public interface Company {
+public interface Company extends Hirable , Dismissible {
     void goToWork(Worker worker);
     void startWork();
     void callTheRoll();

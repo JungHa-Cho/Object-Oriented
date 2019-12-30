@@ -1,7 +1,7 @@
 package personal.oop.practice2.intf;
 
-import personal.oop.practice1.abst.Pomeranian;
-import personal.oop.practice1.intf.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author cho_jeong_ha
@@ -11,18 +11,48 @@ import personal.oop.practice1.intf.*;
 public class Main {
     public static void main(String[] args) {
         Company nano = new Nano();
+        //ceo.hire( new Programmer( "jihwan" ) );
+
+        Employer employer = new Ceo( "PARK" );
+
+         List<Worker> workerList = new ArrayList<>();
+//
+//        workerList.add( new Programmer( "hwang" ) );
+//        workerList.add( new Programmer( "cho" ));
+//        workerList.add( new Programmer( "son" ) );
+//
+//        System.out.println(workerList);
+
+        nano.goToWork( new Ceo( "PARK" ) );
+
+        //employer.hire( new Programmer( "jihwan" ) );
+        //for
+
+        //employer.fire( new Programmer( "jihwan" ) );
+
+
+        employer.hire( new Programmer( "jihwan" ) );
 
         // 출근
-        nano.goToWork(new Programmer("CHO"));
-        nano.goToWork(new Programmer("HWANG"));
-        nano.goToWork(new Programmer("SON"));
-        nano.goToWork(new Ceo("PARK"));
+//        nano.goToWork(new Programmer("CHO"));
+//        nano.goToWork(new Programmer("HWANG"));
+//        nano.goToWork(new Programmer("SON"));
+//        nano.goToWork(new Ceo("PARK"));
+
 
         // 출석
-        nano.callTheRoll();
+//        nano.callTheRoll();
+//
+//        // 일 시작
+//        nano.startWork();
 
-        // 일 시작
-        nano.startWork();
+//        System.out.println("------------------");
+//
+//        //nano.doFire( "jihwan" );
+//
+//        nano.doHire( "jihwan2" );
+
+
     }
 }
 

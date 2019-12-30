@@ -14,8 +14,6 @@ public class AbstPractice1 {
      * @param args the input arguments
      */
     public static void main(String[] args) {
-        Dog navi = new Pomeranian();
-        DogPlayGround dogPlayGround = new DogPlayGround(navi);
-        dogPlayGround.play();
+
     }
 }

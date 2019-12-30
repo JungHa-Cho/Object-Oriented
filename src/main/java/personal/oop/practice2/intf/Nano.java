@@ -12,12 +12,21 @@ public class Nano implements Company {
 
     private List<Worker> goToWorkers;
 
+    private Ceo park;
+
     public Nano() {
         goToWorkers = new ArrayList<>();
     }
 
     @Override
-    public void goToWork(Worker worker) { goToWorkers.add(worker); }
+    public void goToWork(Worker worker) {
+        goToWorkers.add(worker);
+        if (worker instanceof Ceo) {
+            park = (Ceo) worker;
+            park.setWokerList( goToWorkers );
+            System.out.println("gotoworkers list add");
+        }
+    }
 
     @Override
     public void startWork() {
@@ -31,5 +40,27 @@ public class Nano implements Company {
         for (Worker worker : goToWorkers) {
             System.out.println("1. 출근 완료 - " + worker.getName());
         }
+    }
+
+    @Override
+    public void doFire(String name) {
+        Worker dismissWorker = null;
+        for (Worker worker : goToWorkers){
+            if(worker.getName().contains( name )){
+                dismissWorker = worker;
+            }
+        }
+        if ( dismissWorker == null){
+            System.out.println("해고 없다");
+        }else {
+            System.out.println(dismissWorker.getName() + "해고다" );
+        }
+    }
+
+    @Override
+    public void doHire(String name) {
+        System.out.println(name + " : 고용한다");
+        goToWorkers = park.hire( new Programmer( name ) );
+
     }
 }
