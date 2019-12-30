@@ -72,19 +72,19 @@ public class Practice1 {
         System.out.println("--------------------------------------------------");
         Pomeranian pomeranian = new Pomeranian();
         pomeranian.bark();
-        pomeranian.eat();
+//        pomeranian.eat();
         pomeranian.smell();
         System.out.println();
 
         personal.oop.practice1.abst.Dog pomeranianDog = new Pomeranian();
         pomeranianDog.bark();
-        pomeranianDog.eat();
+//        pomeranianDog.eat();
         pomeranianDog.smell();
         System.out.println();
 
         personal.oop.practice1.abst.Animal pomeranianAnimal = new Pomeranian();
         // pomeranianAnimal.bark();
-        pomeranianAnimal.eat();
-        pomeranianAnimal.smell();
+//        pomeranianAnimal.eat();
+//        pomeranianAnimal.smell();
     }
 }
