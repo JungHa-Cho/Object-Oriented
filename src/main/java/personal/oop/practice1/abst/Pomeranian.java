@@ -12,8 +12,8 @@ public class Pomeranian extends Dog {
     }
 
     @Override
-    public void eat() {
-        System.out.println("[포메라니안] 개밥 먹음");
+    void doBehavior() {
+
     }
 
     /*@Override
