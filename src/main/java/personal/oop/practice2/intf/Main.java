@@ -1,5 +1,8 @@
 package personal.oop.practice2.intf;
 
+import personal.oop.practice1.abst.Pomeranian;
+import personal.oop.practice1.intf.*;
+
 /**
  * @author cho_jeong_ha
  * @project oop-practice
@@ -22,3 +25,4 @@ public class Main {
         nano.startWork();
     }
 }
+

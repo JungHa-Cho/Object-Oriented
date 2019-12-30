@@ -21,11 +21,5 @@ public class DogPlayGround {
 
     public void play() {
         dog.bark();
-        dog.doBehavior();
-        dog.feed();
-        dog.stink();
-        dog.stink();
-        dog.stink();
-        dog.stink();
     }
 }

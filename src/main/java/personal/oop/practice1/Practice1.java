@@ -17,7 +17,7 @@ public class Practice1 {
         Dog dori = new Dachshund(); // 도리
 
         // Dog Interface 로 생성된 instance 라서 짖기 밖에 못함
-        System.out.println("-------- Dog Interface");
+        System.out.println( "-------- Dog Interface" );
         navi.bark();
         chorong.bark();
         dori.bark();
@@ -29,7 +29,7 @@ public class Practice1 {
         // ShortLeg shortNavi = new Poodle();
 
         // ShortLeg Interface 로 생성된 instance 는 다리까지 짧음
-        System.out.println("-------- ShortLeg Interface");
+        System.out.println( "-------- ShortLeg Interface" );
         shortChorong.step();
         shortChorong.bark();
         shortDori.step();
@@ -43,7 +43,7 @@ public class Practice1 {
         Animal animalSparrow = new Sparrow();
         Animal animalEagle = new Eagle();
 
-        System.out.println("-------- Animal Interface");
+        System.out.println( "-------- Animal Interface" );
         animalPoodle.eat();
         animalChorong.eat();
         animalDori.eat();
@@ -54,22 +54,22 @@ public class Practice1 {
         Bird birdSparrow = new Sparrow();
         Bird birdEagle = new Eagle();
 
-        System.out.println("-------- Bird Interface");
+        System.out.println( "-------- Bird Interface" );
         birdSparrow.eat();
         birdSparrow.twitter();
         birdEagle.eat();
         birdEagle.twitter();
         System.out.println();
 
-        System.out.println("--------------------------------------------------");
-        FeedGround ground = new FeedGround(navi);
+        System.out.println( "--------------------------------------------------" );
+        FeedGround ground = new FeedGround( navi );
         ground.feed();
 
-        FeedGround birdGround = new FeedGround(birdSparrow);
+        FeedGround birdGround = new FeedGround( birdSparrow );
         birdGround.feed();
         System.out.println();
 
-        System.out.println("--------------------------------------------------");
+        System.out.println( "--------------------------------------------------" );
         Pomeranian pomeranian = new Pomeranian();
         pomeranian.bark();
         pomeranian.eat();

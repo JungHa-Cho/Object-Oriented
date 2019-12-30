@@ -17,9 +17,7 @@ public class Nano implements Company {
     }
 
     @Override
-    public void goToWork(Worker worker) {
-        goToWorkers.add(worker);
-    }
+    public void goToWork(Worker worker) { goToWorkers.add(worker); }
 
     @Override
     public void startWork() {
@@ -31,7 +29,7 @@ public class Nano implements Company {
     @Override
     public void callTheRoll() {
         for (Worker worker : goToWorkers) {
-            System.out.println("출근 완료 - " + worker.getName());
+            System.out.println("1. 출근 완료 - " + worker.getName());
         }
     }
 }

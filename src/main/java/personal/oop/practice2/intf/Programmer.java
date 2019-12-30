@@ -15,7 +15,7 @@ public class Programmer implements Employee {
 
     @Override
     public void work() {
-        System.out.println("PROGRAMMER:" + name + ", 일한다.");
+        System.out.println("2. PROGRAMMER:" + name + ", 일한다.");
     }
 
     @Override
