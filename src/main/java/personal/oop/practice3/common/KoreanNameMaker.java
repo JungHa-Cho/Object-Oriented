@@ -1,4 +1,4 @@
-package personal.oop.practice3;
+package personal.oop.practice3.common;
 
 import java.util.Arrays;
 import java.util.List;
