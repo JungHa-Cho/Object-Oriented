@@ -14,8 +14,6 @@ public class Main {
         //ceo.hire( new Programmer( "jihwan" ) );
 
         Employer employer = new Ceo( "PARK" );
-
-         List<Worker> workerList = new ArrayList<>();
 //
 //        workerList.add( new Programmer( "hwang" ) );
 //        workerList.add( new Programmer( "cho" ));
@@ -32,6 +30,10 @@ public class Main {
 
 
         employer.hire( new Programmer( "jihwan" ) );
+        employer.hire( new Programmer( "jihwan1" ) );
+        employer.hire( new Programmer( "jihwan2" ) );
+
+        employer.bonus();
 
         // 출근
 //        nano.goToWork(new Programmer("CHO"));

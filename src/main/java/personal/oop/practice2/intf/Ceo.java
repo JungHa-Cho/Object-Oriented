@@ -51,4 +51,11 @@ public class Ceo implements Employer {
     public String getName() {
         return name;
     }
+
+    @Override
+    public void bonus() {
+        for ( Worker worker : wokerList){
+            System.out.println(worker.getName() + " : 보너스 준다");
+        }
+    }
 }
