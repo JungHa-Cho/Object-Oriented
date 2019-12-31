@@ -1,9 +1,11 @@
 package personal.oop.practice3;
 
 public class JihwanComputerFactory implements ComputerFactory {
-    /*
-    * TODO
-    */
+
+    public JihwanComputerFactory(){
+        System.out.println("지환 컴퓨터 팩토리 생성자");
+    }
+
     @Override
     public Keyboard createKeyboard() {
         return new JihwanKeyboard();

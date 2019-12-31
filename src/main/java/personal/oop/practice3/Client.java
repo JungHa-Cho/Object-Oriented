@@ -7,6 +7,5 @@ public class Client {
         factoryOfComputerFactory.createComputer( Manufacturer.SAMSUNG );
         factoryOfComputerFactory.createComputer( Manufacturer.DELL );
         factoryOfComputerFactory.createComputer( Manufacturer.JIHWAN );
-
     }
 }
