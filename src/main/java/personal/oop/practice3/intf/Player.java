@@ -31,6 +31,14 @@ public class Player implements Selectable {
         return rockPaperScissors;
     }
 
+    public RockPaperScissors getRockPaperScissors() {
+        return rockPaperScissors;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     private void sleep() {
         try {
             Thread.sleep(10);
