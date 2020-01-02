@@ -7,7 +7,7 @@ package personal.oop.practice3;
  **/
 public class Main {
     public static void main(String[] args) {
-        PlayGround gameBoard = new PlayGround(5);
+        PlayGround gameBoard = new PlayGround(6);
         gameBoard.start();
     }
 }

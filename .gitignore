@@ -1,0 +1,49 @@
+.gradle
+/build/
+*/build/
+!gradle/wrapper/gradle-wrapper.jar
+*/out/
+
+*.log
+*/*.log
+default.xml
+default-aegnt.xml
+mybatis-config.xml
+MANIFEST.MF
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+.idea/
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### DEFAULT ###
+log/
+classes/
+**/SMS*.xml
+**/GMS*.xml
+**/KMS*.xml
+**/MMS*.xml
+**/SMSDB*.xml
+**/GMSDB*.xml
+**/KMSDB*.xml
+**/MMSDB*.xml
+**/service.xml

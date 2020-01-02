@@ -13,5 +13,5 @@ public interface Selectable {
      *
      * @return the rock paper scissors
      */
-    RockPaperScissors select();
+    void select();
 }

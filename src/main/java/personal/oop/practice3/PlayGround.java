@@ -3,7 +3,7 @@ package personal.oop.practice3;
 import personal.oop.practice3.common.Counter;
 import personal.oop.practice3.common.KoreanNameMaker;
 import personal.oop.practice3.common.Verify;
-import personal.oop.practice3.intf.Player;
+import personal.oop.practice3.intf.RockPaperScissorsGamePlayer;
 import personal.oop.practice3.intf.RockPaperScissors;
 
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ import java.util.List;
 public class PlayGround {
 
     private int playerCount;
-    private List<Player> playerList;
+    private List<RockPaperScissorsGamePlayer> rockPaperScissorsGamePlayerList;
 
     /**
      * Instantiates a new Play ground.
@@ -28,7 +28,7 @@ public class PlayGround {
      */
     public PlayGround(int playerCount) {
         this.playerCount = playerCount;
-        this.playerList = new ArrayList<>();
+        this.rockPaperScissorsGamePlayerList = new ArrayList<>();
     }
 
     /**
@@ -38,25 +38,20 @@ public class PlayGround {
         KoreanNameMaker koreanNameMaker = new KoreanNameMaker();
 
         for (int i = 0; i < playerCount; i++)
-            playerList.add(new Player(koreanNameMaker.getRandomName()));
+            rockPaperScissorsGamePlayerList.add(new RockPaperScissorsGamePlayer(koreanNameMaker.getRandomName()));
 
         winnerWinnerChickenDinner();
     }
 
-    private void mindControl() {
-        for (Player player : playerList)
-            player.select();
-    }
-
-    // game calculate
+    // game calculate, main logic
     private void winnerWinnerChickenDinner() {
         while (true) {
             // 가위 바위 보 계수기
             Counter gameCounter = new Counter();
 
             // 실제 player가 가위 바위 보를 선택함
-            for (Player player : playerList)
-                gameCounter.calculate(player.select());
+            for (RockPaperScissorsGamePlayer rockPaperScissorsGamePlayer : rockPaperScissorsGamePlayerList)
+                gameCounter.calculate(rockPaperScissorsGamePlayer.select());
 
             // 진 사람 선별기
             Verify gameVerifier = new Verify(gameCounter);
@@ -64,13 +59,13 @@ public class PlayGround {
 
             // 진 사람이 있으면
             if (verifyRose != null) {
-                deleteRoser(verifyRose);
+                deleteLoser(verifyRose);
             } else {
                 System.out.println("진 사람이 없음!");
             }
 
-            if (playerList.size() == 1) {
-                System.out.println("우승자 : " + playerList.get(0).getName());
+            if (rockPaperScissorsGamePlayerList.size() == 1) {
+                System.out.println("우승자 : " + rockPaperScissorsGamePlayerList.get(0).getName());
                 System.out.println("게임 끝!");
                 break;
             }
@@ -84,16 +79,16 @@ public class PlayGround {
         }
     }
 
-    private void deleteRoser(RockPaperScissors rockPaperScissors) {
-        List<Player> indexing = new ArrayList<>();
-        for (Player player : playerList) {
-            if (player.getRockPaperScissors() == rockPaperScissors)
-                indexing.add(player);
+    private void deleteLoser(RockPaperScissors rockPaperScissors) {
+        List<RockPaperScissorsGamePlayer> indexing = new ArrayList<>();
+        for (RockPaperScissorsGamePlayer rockPaperScissorsGamePlayer : rockPaperScissorsGamePlayerList) {
+            if (rockPaperScissorsGamePlayer.getRockPaperScissors() == rockPaperScissors)
+                indexing.add(rockPaperScissorsGamePlayer);
         }
 
-        for (Player roser : indexing) {
-            System.out.println("진사람 : " + roser.getName());
-            playerList.remove(roser);
+        for (RockPaperScissorsGamePlayer loser : indexing) {
+            System.out.println("진사람 : " + loser.getName());
+            rockPaperScissorsGamePlayerList.remove(loser);
         }
     }
 }
