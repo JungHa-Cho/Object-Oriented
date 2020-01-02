@@ -6,6 +6,8 @@ public class Start {
 
     private String userKey;
 
+    private int userNumber;
+
 
     public Start() {
 
@@ -26,13 +28,25 @@ public class Start {
         for(int coin = 0; coin < counter; coin++){
 
             userKey = player.getUserKey();
-
-            compare.comPare( userKey );
-
+            if ( userKey.equals( "가위" )){
+                userNumber = 0;
+            }
+            else if ( userKey.equals( "바위" )){
+                userNumber = 1;
+            }
+            else if ( userKey.equals( "보" )){
+                userNumber = 2;
+            }
+            else {
+                System.exit( 0 );
+            }
+            compare.comPare( userNumber );
         }
     }
 
     private void result(){
 
     }
+
+
 }
