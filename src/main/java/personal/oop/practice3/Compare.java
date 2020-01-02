@@ -2,16 +2,16 @@ package personal.oop.practice3;
 
 public class Compare {
 
-    public void comPare(Type type) {
+    public void comPare(String userkey) {
 
-        switch (type) {
-            case PAPER:
+        switch (userkey) {
+            case "가위":
                 System.out.println( "PAPER" );
                 break;
-            case SCISSORS:
+            case "바위":
                 System.out.println( "SCISSORS" );
                 break;
-            case ROCK:
+            case "보":
                 System.out.println( "ROCK" );
                 break;
         }

@@ -26,7 +26,9 @@ public class Start {
         for(int coin = 0; coin < counter; coin++){
 
             userKey = player.getUserKey();
-            
+
+            compare.comPare( userKey );
+
         }
     }
 

@@ -66,13 +66,12 @@ public class Player {
         return counter;
     }
 
-    private void setUserKey(){
+    public String getUserKey(){
         System.out.println( "       가위 , 바위 , 보중 선택하세요" );
 
         userKey = scanner.next();
+
+        return userKey;
     }
 
-    public String getUserKey(){
-        return userKey ;
-    }
 }
