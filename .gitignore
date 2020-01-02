@@ -1,6 +1,15 @@
-HELP.md
 .gradle
+/build/
+*/build/
 !gradle/wrapper/gradle-wrapper.jar
+*/out/
+
+*.log
+*/*.log
+default.xml
+default-aegnt.xml
+mybatis-config.xml
+MANIFEST.MF
 
 ### STS ###
 .apt_generated
@@ -13,6 +22,7 @@ HELP.md
 
 ### IntelliJ IDEA ###
 .idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -25,5 +35,15 @@ HELP.md
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
-.vscode/
+### DEFAULT ###
+log/
+classes/
+**/SMS*.xml
+**/GMS*.xml
+**/KMS*.xml
+**/MMS*.xml
+**/SMSDB*.xml
+**/GMSDB*.xml
+**/KMSDB*.xml
+**/MMSDB*.xml
+**/service.xml
