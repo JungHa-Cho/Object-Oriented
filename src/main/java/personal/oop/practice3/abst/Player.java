@@ -1,4 +1,4 @@
-package personal.oop.practice3.intf;
+package personal.oop.practice3.abst;
 
 /**
  * The type Player.
@@ -7,7 +7,7 @@ package personal.oop.practice3.intf;
  * @project oop -practice
  * @update 2020 -01-02
  */
-public abstract class Player implements Selectable {
+public abstract class Player implements Selectable, Playable {
     /**
      * The Name.
      */
@@ -18,7 +18,7 @@ public abstract class Player implements Selectable {
      *
      * @param name the name
      */
-    public Player(String name) {
+    protected Player(String name) {
         this.name = name;
     }
 
@@ -34,7 +34,7 @@ public abstract class Player implements Selectable {
     /**
      * Play string.
      *
-     * @return the string
+     * @return the play return
      */
-    abstract String play();
+    public abstract String play();
 }

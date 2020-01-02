@@ -1,4 +1,4 @@
-package personal.oop.practice3.intf;
+package personal.oop.practice3.abst;
 
 /**
  * The interface Player.

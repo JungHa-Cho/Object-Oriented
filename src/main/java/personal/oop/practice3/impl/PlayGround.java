@@ -1,10 +1,6 @@
-package personal.oop.practice3;
+package personal.oop.practice3.impl;
 
-import personal.oop.practice3.common.Counter;
-import personal.oop.practice3.common.KoreanNameMaker;
-import personal.oop.practice3.common.Verify;
-import personal.oop.practice3.intf.RockPaperScissorsGamePlayer;
-import personal.oop.practice3.intf.RockPaperScissors;
+import personal.oop.practice3.abst.Game;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +12,7 @@ import java.util.List;
  * @project oop -practice
  * @update 2019 -12-30
  */
-public class PlayGround {
+public class PlayGround implements Game {
 
     private int playerCount;
     private List<RockPaperScissorsGamePlayer> rockPaperScissorsGamePlayerList;
@@ -34,6 +30,7 @@ public class PlayGround {
     /**
      * Start.
      */
+    @Override
     public void start() {
         KoreanNameMaker koreanNameMaker = new KoreanNameMaker();
 
@@ -50,12 +47,14 @@ public class PlayGround {
             Counter gameCounter = new Counter();
 
             // 실제 player가 가위 바위 보를 선택함
-            for (RockPaperScissorsGamePlayer rockPaperScissorsGamePlayer : rockPaperScissorsGamePlayerList)
-                gameCounter.calculate(rockPaperScissorsGamePlayer.select());
+            for (int i = 0; i < rockPaperScissorsGamePlayerList.size(); i++) {
+                rockPaperScissorsGamePlayerList.get(i).select();
+                gameCounter.calculate(rockPaperScissorsGamePlayerList.get(i).play());
+            }
 
             // 진 사람 선별기
-            Verify gameVerifier = new Verify(gameCounter);
-            RockPaperScissors verifyRose = gameVerifier.verifyRose();
+            Verifier gameVerifier = new Verifier(gameCounter);
+            RockPaperScissors verifyRose = RockPaperScissors.fromName(gameVerifier.verify());
 
             // 진 사람이 있으면
             if (verifyRose != null) {
@@ -65,6 +64,7 @@ public class PlayGround {
             }
 
             if (rockPaperScissorsGamePlayerList.size() == 1) {
+                System.out.println("============================");
                 System.out.println("우승자 : " + rockPaperScissorsGamePlayerList.get(0).getName());
                 System.out.println("게임 끝!");
                 break;

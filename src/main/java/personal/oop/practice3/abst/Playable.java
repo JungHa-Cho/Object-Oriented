@@ -1,4 +1,4 @@
-package personal.oop.practice3.intf;
+package personal.oop.practice3.abst;
 
 /**
  * @author cho_jeong_ha
@@ -6,5 +6,5 @@ package personal.oop.practice3.intf;
  * @update 2020-01-02
  **/
 public interface Playable {
-    void play();
+    String play();
 }

@@ -1,6 +1,4 @@
-package personal.oop.practice3.common;
-
-import personal.oop.practice3.intf.RockPaperScissors;
+package personal.oop.practice3.impl;
 
 /**
  * The type Counter.
@@ -28,8 +26,8 @@ public class Counter {
      *
      * @param rockPaperScissors the rock paper scissors
      */
-    public void calculate(RockPaperScissors rockPaperScissors) {
-        switch (rockPaperScissors) {
+    public void calculate(String rockPaperScissors) {
+        switch (RockPaperScissors.valueOf(rockPaperScissors)) {
             case ROCK:
                 rockCount++;
                 break;

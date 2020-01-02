@@ -1,4 +1,4 @@
-package personal.oop.practice3.intf;
+package personal.oop.practice3.abst;
 
 import java.util.List;
 
@@ -8,5 +8,5 @@ import java.util.List;
  * @update 2020-01-02
  **/
 public interface Rule {
-    List<String> verify();
+    String verify();
 }
