@@ -16,6 +16,6 @@ import java.nio.file.Watchable;
  **/
 public class Practice1 {
     public static void main(String[] args) {
-        // interface
+        // inf
     }
 }
