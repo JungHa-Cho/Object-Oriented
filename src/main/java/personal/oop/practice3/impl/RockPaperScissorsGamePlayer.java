@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class RockPaperScissorsGamePlayer extends Player {
 
-    private RockPaperScissors rockPaperScissors;
+    private RockPaperScissorsEnum rockPaperScissorsEnum;
 
     /**
      * Instantiates a new Player.
@@ -24,21 +24,34 @@ public class RockPaperScissorsGamePlayer extends Player {
         super(name);
     }
 
+    /**
+     * Gets rock paper scissors.
+     *
+     * @return the rock paper scissors
+     */
+    public RockPaperScissorsEnum getRockPaperScissorsEnum() {
+        return rockPaperScissorsEnum;
+    }
+
     @Override
     public String play() {
-        System.out.println(name + "은 " + rockPaperScissors + "를 냈다.");
-        return rockPaperScissors.name();
+        System.out.println(getName() + "은 " + rockPaperScissorsEnum + "를 냈다.");
+        return rockPaperScissorsEnum.name();
     }
 
     @Override
     public void select() {
         sleep();
-        rockPaperScissors = RockPaperScissors.values()[new Random(System.currentTimeMillis()).nextInt(3)];
-        System.out.println(name + "은 " + rockPaperScissors + "를 마음속으로 골랐다.");
+        rockPaperScissorsEnum = getRockPaperScissors();
+        System.out.println("- " + getName() + "은 " + rockPaperScissorsEnum + "를 마음속으로 골랐다.");
     }
 
-    public RockPaperScissors getRockPaperScissors() {
-        return rockPaperScissors;
+    private RockPaperScissorsEnum getRockPaperScissors() {
+        return RockPaperScissorsEnum.values()[getRandom()];
+    }
+
+    private int getRandom() {
+        return new Random(System.currentTimeMillis()).nextInt(3);
     }
 
     private void sleep() {

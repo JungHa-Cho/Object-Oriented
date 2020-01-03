@@ -7,18 +7,18 @@ package personal.oop.practice3.impl;
  * @project oop -practice
  * @update 2020 -01-01
  */
-public class Counter {
-    private int rockCount = 0;
-    private int paperCount = 0;
-    private int scissorsCount;
+public class RockPaperScissorsGameCounter {
+    private int rock;
+    private int paper;
+    private int scissors;
 
     /**
      * Instantiates a new Counter.
      */
-    public Counter() {
-        this.rockCount = 0;
-        this.paperCount = 0;
-        this.scissorsCount = 0;
+    public RockPaperScissorsGameCounter() {
+        this.rock = 0;
+        this.paper = 0;
+        this.scissors = 0;
     }
 
     /**
@@ -27,15 +27,15 @@ public class Counter {
      * @param rockPaperScissors the rock paper scissors
      */
     public void calculate(String rockPaperScissors) {
-        switch (RockPaperScissors.valueOf(rockPaperScissors)) {
+        switch (RockPaperScissorsEnum.valueOf(rockPaperScissors)) {
             case ROCK:
-                rockCount++;
+                rock++;
                 break;
             case PAPER:
-                paperCount++;
+                paper++;
                 break;
             case SCISSORS:
-                scissorsCount++;
+                scissors++;
                 break;
         }
     }
@@ -45,8 +45,8 @@ public class Counter {
      *
      * @return the rock count
      */
-    public int getRockCount() {
-        return rockCount;
+    public int getRock() {
+        return rock;
     }
 
     /**
@@ -54,8 +54,8 @@ public class Counter {
      *
      * @return the paper count
      */
-    public int getPaperCount() {
-        return paperCount;
+    public int getPaper() {
+        return paper;
     }
 
     /**
@@ -63,7 +63,7 @@ public class Counter {
      *
      * @return the scissors count
      */
-    public int getScissorsCount() {
-        return scissorsCount;
+    public int getScissors() {
+        return scissors;
     }
 }

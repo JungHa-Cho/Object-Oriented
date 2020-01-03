@@ -7,7 +7,7 @@ package personal.oop.practice3.impl;
  * @project oop -practice
  * @update 2019 -12-30
  */
-public enum RockPaperScissors {
+public enum RockPaperScissorsEnum {
     /**
      * ROCK IS 바위.
      */
@@ -23,14 +23,20 @@ public enum RockPaperScissors {
 
     private String property;
 
-    RockPaperScissors(String property) {
+    RockPaperScissorsEnum(String property) {
         this.property = property;
     }
 
-    public static RockPaperScissors fromName(String compare) {
-        for (RockPaperScissors rockPaperScissors : RockPaperScissors.values()) {
-            if (rockPaperScissors.property == compare)
-                return rockPaperScissors;
+    /**
+     * From name rock paper scissors.
+     *
+     * @param compare the compare
+     * @return the rock paper scissors
+     */
+    public static RockPaperScissorsEnum fromName(String compare) {
+        for (RockPaperScissorsEnum rockPaperScissorsEnum : RockPaperScissorsEnum.values()) {
+            if (rockPaperScissorsEnum.property == compare)
+                return rockPaperScissorsEnum;
         }
         return null;
     }

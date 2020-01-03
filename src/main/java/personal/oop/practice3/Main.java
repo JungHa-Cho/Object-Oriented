@@ -1,6 +1,6 @@
 package personal.oop.practice3;
 
-import personal.oop.practice3.impl.PlayGround;
+import personal.oop.practice3.impl.RockPaperScissorsGamePlayGround;
 
 /**
  * @author cho_jeong_ha
@@ -9,7 +9,7 @@ import personal.oop.practice3.impl.PlayGround;
  **/
 public class Main {
     public static void main(String[] args) {
-        PlayGround gameBoard = new PlayGround(6);
+        RockPaperScissorsGamePlayGround gameBoard = new RockPaperScissorsGamePlayGround(6);
         gameBoard.start();
     }
 }
