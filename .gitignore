@@ -34,3 +34,7 @@ MANIFEST.MF
 /dist/
 /nbdist/
 /.nb-gradle/
+
+### DEFAULT ###
+log/
+classes/

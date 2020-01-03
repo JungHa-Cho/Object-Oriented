@@ -2,29 +2,24 @@ package personal.oop.practice1.abst;
 
 /**
  * The type Dog.
- *
- * @author cho_jeong_ha
- * @project oop -practice
- * @update 2019 -12-04
  */
-public abstract class Dog extends Animal {
+public abstract class Dog extends Animal{
+
     /**
-     * Instantiates a new Animal.
-     *
-     * @param name the name
+     * Bite.
      */
-    Dog(String name) {
-        super(name);
-    }
+    public abstract void bite();
 
     @Override
-    public void smell() {
-        // super.smell();
-        System.out.println("Dog smell");
+    public void sleep() {
+        System.out.println("[Dog] 잔다.");
     }
 
     /**
      * Bark.
      */
-    public abstract void bark();
+    public void bark(){
+        System.out.println("[Dog] 짖다");
+    }
+
 }
