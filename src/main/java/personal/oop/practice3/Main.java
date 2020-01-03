@@ -1,5 +1,7 @@
 package personal.oop.practice3;
 
+import personal.oop.practice3.impl.RockPaperScissorsGamePlayGround;
+
 /**
  * @author cho_jeong_ha
  * @project oop-practice
@@ -7,7 +9,7 @@ package personal.oop.practice3;
  **/
 public class Main {
     public static void main(String[] args) {
-        PlayGround gameBoard = new PlayGround(5);
+        RockPaperScissorsGamePlayGround gameBoard = new RockPaperScissorsGamePlayGround(6);
         gameBoard.start();
     }
 }

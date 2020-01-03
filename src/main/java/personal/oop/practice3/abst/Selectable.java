@@ -1,4 +1,4 @@
-package personal.oop.practice3.intf;
+package personal.oop.practice3.abst;
 
 /**
  * The interface Player.
@@ -13,5 +13,5 @@ public interface Selectable {
      *
      * @return the rock paper scissors
      */
-    RockPaperScissors select();
+    void select();
 }
