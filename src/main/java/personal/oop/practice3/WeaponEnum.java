@@ -1,6 +1,7 @@
 package personal.oop.practice3;
 
 public enum WeaponEnum {
+
     ROCK("바위"),
     PAPER("보자기"),
     SCISSORS("가위");

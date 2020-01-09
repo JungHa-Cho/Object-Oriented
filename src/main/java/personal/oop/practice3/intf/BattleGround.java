@@ -11,6 +11,6 @@ public interface BattleGround {
 
     void Battle(List<Player> players);
 
-    void exitBattleGrond(List<Player> players, String weaponType);
+    void exitBattleGrond(List<Player> players, WeaponEnum weaponType);
 
 }
